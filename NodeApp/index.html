@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="fileupload.css">
+</head>
+
+<body>
+    <form action="https://vmapartment.co.in/" enctype="multipart/form-data" action method="post">
+        <!-- <form enctype=" application/x-www-form-urlencoded" action method="post"> -->
+
+        <h1><strong>Music file upload</strong></h1>
+
+        <div class="form-group">
+            <label for="title">File Name</label>
+            <input type="text" name="title" id="title" class="form-controll" />
+        </div>
+
+        <div class="form-group file-area">
+            <input type="file" name="Music" id="music" required="required" multiple="multiple" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit">UPLOAD MUSIC</button>
+        </div>
+
+    </form>
+</body>
+<!-- <script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', (e) => {
+
+        // Create payload of type multipart/form-data (awlays of this type when using the FormData() constructor):
+        const fd = new FormData(form);
+
+        // Convert to URL-encoded string:
+        const urlEncoded = new URLSearchParams(fd).toString();
+
+        fetch('http://localhost:3000/postdata', {
+            method: "POST",
+            body: urlEncoded, // just 'fd' for multipart/form-data
+            headers: {
+                'Content-type': 'application/x-www-form-urlencoded'
+                // Content-type header should only be set if data is url-encoded! A FormData object will set the header as multipart/form-data automatically (and setting it manually may lead to an error)
+            }
+        })
+
+    })
+</script> -->
+
+</html>

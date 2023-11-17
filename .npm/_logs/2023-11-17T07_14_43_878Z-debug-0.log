@@ -1,0 +1,94 @@
+0 verbose cli [
+0 verbose cli   '/usr/bin/node',
+0 verbose cli   '/usr/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   '--no-save',
+0 verbose cli   'node-linux-x64@21.1.0'
+0 verbose cli ]
+1 info using npm@8.5.1
+2 info using node@v12.22.9
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 7ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 27ms
+6 timing config:load:builtin Completed in 28ms
+7 timing config:load:cli Completed in 5ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/home/ubuntu/TEST/node_modules/node/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 8ms
+11 timing config:load:file:/home/ubuntu/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 52ms
+17 timing config:load:setEnvs Completed in 3ms
+18 timing config:load Completed in 107ms
+19 timing npm:load:configload Completed in 108ms
+20 timing npm:load:setTitle Completed in 2ms
+21 timing config:load:flatten Completed in 6ms
+22 timing npm:load:display Completed in 8ms
+23 verbose logfile /home/ubuntu/.npm/_logs/2023-11-17T07_14_43_878Z-debug-0.log
+24 timing npm:load:logFile Completed in 16ms
+25 timing npm:load:timers Completed in 0ms
+26 timing npm:load:configScope Completed in 0ms
+27 timing npm:load Completed in 139ms
+28 timing arborist:ctor Completed in 1ms
+29 silly logfile start cleaning logs, removing 1 files
+30 timing arborist:ctor Completed in 0ms
+31 timing idealTree:init Completed in 30ms
+32 timing idealTree:userRequests Completed in 46ms
+33 silly idealTree buildDeps
+34 silly fetch manifest node-bin-setup@^1.0.0
+35 http fetch GET 200 https://registry.npmjs.org/node-bin-setup 6874ms (cache miss)
+36 silly fetch manifest node-linux-x64@21.1.0
+37 http fetch GET 200 https://registry.npmjs.org/node-linux-x64 2636ms (cache miss)
+38 silly placeDep ROOT node-bin-setup@1.1.3 OK for: node@21.1.0 want: ^1.0.0
+39 silly placeDep ROOT node-linux-x64@21.1.0 OK for: node@21.1.0 want: 21.1.0
+40 timing idealTree:#root Completed in 10342ms
+41 timing idealTree:node_modules/node-bin-setup Completed in 0ms
+42 timing idealTree:node_modules/node-linux-x64 Completed in 0ms
+43 timing idealTree:buildDeps Completed in 10345ms
+44 timing idealTree:fixDepFlags Completed in 0ms
+45 timing idealTree Completed in 10427ms
+46 timing reify:loadTrees Completed in 10428ms
+47 timing reify:diffTrees Completed in 3ms
+48 silly reify moves {}
+49 timing reify:retireShallow Completed in 7ms
+50 timing reify:createSparse Completed in 8ms
+51 timing reify:loadBundles Completed in 0ms
+52 silly audit bulk request { 'node-bin-setup': [ '1.1.3' ], 'node-linux-x64': [ '21.1.0' ] }
+53 silly tarball no local data for node-linux-x64@https://registry.npmjs.org/node-linux-x64/-/node-linux-x64-21.1.0.tgz. Extracting by manifest.
+54 timing reifyNode:node_modules/node-bin-setup Completed in 78ms
+55 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 362ms
+56 timing auditReport:getReport Completed in 369ms
+57 silly audit report {}
+58 timing auditReport:init Completed in 1ms
+59 timing reify:audit Completed in 374ms
+60 warn tarball tarball data for node-linux-x64@https://registry.npmjs.org/node-linux-x64/-/node-linux-x64-21.1.0.tgz (sha512-JSQPXN73mUA9hPQISHiufdbNTU4YSWMusH6atlrJO+XYFSGrU27mTFitZ8mKkl/FF4hn48SwbYscbJeLPxoSgg==) seems to be corrupted. Trying again.
+61 verbose stack Error: sha512-JSQPXN73mUA9hPQISHiufdbNTU4YSWMusH6atlrJO+XYFSGrU27mTFitZ8mKkl/FF4hn48SwbYscbJeLPxoSgg== integrity checksum failed when using sha512: wanted sha512-JSQPXN73mUA9hPQISHiufdbNTU4YSWMusH6atlrJO+XYFSGrU27mTFitZ8mKkl/FF4hn48SwbYscbJeLPxoSgg== but got sha512-0olUL4bBUd7UJvzoBicuALvXVv8ctHtz1PwL5ADTffO7CXSPEkxZTN28P8BfqgRhXli/KYFT+ikhObtieK3XKg==. (8763628 bytes)
+61 verbose stack     at IntegrityStream.[_onEnd] (/usr/share/nodejs/ssri/index.js:94:19)
+61 verbose stack     at IntegrityStream.emit (/usr/share/nodejs/ssri/index.js:67:35)
+61 verbose stack     at IntegrityStream.[maybeEmitEnd] (/usr/share/nodejs/ssri/node_modules/minipass/index.js:357:12)
+61 verbose stack     at IntegrityStream.emit (/usr/share/nodejs/ssri/node_modules/minipass/index.js:419:29)
+61 verbose stack     at IntegrityStream.emit (/usr/share/nodejs/ssri/index.js:68:18)
+61 verbose stack     at IntegrityStream.[resume] (/usr/share/nodejs/ssri/node_modules/minipass/index.js:254:12)
+61 verbose stack     at IntegrityStream.resume (/usr/share/nodejs/ssri/node_modules/minipass/index.js:258:24)
+61 verbose stack     at Pipeline.emit (/usr/share/nodejs/minipass-pipeline/index.js:105:19)
+61 verbose stack     at Pipeline.[resume] (/usr/share/nodejs/minipass/index.js:259:10)
+61 verbose stack     at Minipass.ondrain (/usr/share/nodejs/minipass/index.js:329:67)
+62 verbose cwd /home/ubuntu/TEST/node_modules/node
+63 verbose Linux 6.2.0-1015-aws
+64 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "--no-save" "node-linux-x64@21.1.0"
+65 verbose node v12.22.9
+66 verbose npm  v8.5.1
+67 error code EINTEGRITY
+68 error sha512-JSQPXN73mUA9hPQISHiufdbNTU4YSWMusH6atlrJO+XYFSGrU27mTFitZ8mKkl/FF4hn48SwbYscbJeLPxoSgg== integrity checksum failed when using sha512: wanted sha512-JSQPXN73mUA9hPQISHiufdbNTU4YSWMusH6atlrJO+XYFSGrU27mTFitZ8mKkl/FF4hn48SwbYscbJeLPxoSgg== but got sha512-0olUL4bBUd7UJvzoBicuALvXVv8ctHtz1PwL5ADTffO7CXSPEkxZTN28P8BfqgRhXli/KYFT+ikhObtieK3XKg==. (8763628 bytes)
+69 verbose exit 1
+70 timing npm Completed in 368959ms
+71 verbose unfinished npm timer command:install 1700205285538
+72 verbose unfinished npm timer reify 1700205285547
+73 verbose unfinished npm timer reify:unpack 1700205296092
+74 verbose unfinished npm timer reifyNode:node_modules/node-linux-x64 1700205296092
+75 verbose code 1
+76 error A complete log of this run can be found in:
+76 error     /home/ubuntu/.npm/_logs/2023-11-17T07_14_43_878Z-debug-0.log
